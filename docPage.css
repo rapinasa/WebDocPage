@@ -1,7 +1,3 @@
-*{
-    box-sizing: border-box;
-}
-
 
 body{
     margin:10px;
@@ -20,17 +16,14 @@ nav{
 
 }
 
-
-
-
 .main-section{
     width: 80%;
     float: right;
 }
 
-.main-section h1,p{
+.main-section>h1,.main-section>p, .main-section>h3{
 text-align: center;
-padding: 20px;
+padding:0 20px;
 }
 
 
@@ -41,8 +34,7 @@ code{
 
  .main-section ul {
     display: inline-block;
-    margin-left: 20px;
-  
+    margin: 20px 100px;
 }
 
 #navbar, #navbar a {
@@ -50,7 +42,7 @@ code{
     text-decoration: none;
     text-align: center;
     display: block;
-     color:black;
+    color:black;
 }
 
 #navbar li{
@@ -67,7 +59,9 @@ code{
 .link{
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
 }
 .link a{
     padding-right: 40px;
+
 }

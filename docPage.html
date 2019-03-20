@@ -46,7 +46,7 @@
         <h1> <strong> CSS </strong> Cascading Style Sheets </h1>
          <p> CSS is a language that describes the style of an HTML document.
             CSS describes how HTML elements should be displayed.</p>
-            <p> CSS Examples</p>
+            <h3> CSS Examples</h3>
             <code> 
             h1.test1 {                       <br>
             font-family: Georgia, sans-serif;<br>
@@ -75,7 +75,7 @@
           pache CouchDB and Adobe Acrobat. JavaScript is a prototype-based, multi-paradigm,
           dynamic language, supporting object-oriented, imperative, and declarative
            (e.g. functional programming) styles. Read more about JavaScript.</p>
-            <p> JS code Examples</p>
+            <h3> JS code Examples</h3>
             <code> 
                 var cars = ["BMW", "Volvo", "Saab", "Ford", "Fiat", "Audi"]; <br>
                 var text = ""; <br>
@@ -85,7 +85,7 @@
                 } <br>
                 document.getElementById("demo").innerHTML = text; <br>
             </code>
-            <p>What can JavaScript do?</p>
+            <h3>What can JavaScript do?</h3>
         <ul>
           <li>Display information based on the time of the day</li>
           <li>Detect the visitor's browser</li>
@@ -102,6 +102,85 @@
          <p><a href='https://code.tutsplus.com/tutorials/24-javascript-best-practices-for-beginners--net-5399' target="blank">Best practices</a></p>
          <p><a href='https://jshint.com/' target="blank">JS Hint(check it out)</a></p>
          <p><a href='http://vanilla-js.com/' target="blank">Vanilla Javascript</a></p>
+        </div>
+      </section>
+      <section class="main-section" id="react">
+             <h1> <strong> React(Redux) </strong> </h1>
+             <p> ReactJS basically is an open-source JavaScript library which is used for building user
+                 interfaces specifically for single page applications. It’s used for handling view
+                 layer for web and mobile apps. React also allows us to create reusable UI components.</p>
+             <p> Redux helps you write applications that behave consistently, run in different 
+                 environments (client, server, and native), and are easy to test.
+                 Redux designed to work with React's component model. You define how to extract the values your 
+                 component needs from Redux, and your component receives them as props.</p>
+             <p> React uses Babel syntax. Babel is a toolchain that is mainly used
+                 to convert ECMAScript 2015+ code into a backwards compatible version of 
+                 JavaScript in current and older browsers or environments. </p>   
+             <h3> React Example</h3>
+            <code><xmp> 
+                  function tick() {
+                  const element = (
+                  <div>
+                      <h1>Hello, world!</h1>
+                      <h2>It is {new Date().toLocaleTimeString()}.</h2>
+                  </div>
+                  );
+                  ReactDOM.render(element, document.getElementById('root'));
+                  }
+                  setInterval(tick, 1000); <br>
+            </xmp></code>
+            <h3>Main Principles of ReactJS</h3>
+        <ul>
+          <li><strong>Write HTML using JavaScript:</strong> HTML is great for static data,
+             but not so great for dynamic changing data. Instead of using
+             a template language in place of HTML, React’s way is to just
+             generate HTML using the JavaScript language itself.</li>
+          <li><strong>You can use the JSX compromise:</strong> Since we love HTML,
+             there is a compromise to get us to write HTML in JavaScript
+             but still use a syntax similar to HTML. It the JSX JavaScript extension.</li>
+          <li><strong>Reusable, composable components:</strong> Just like HTML itself,
+             and adding to what HTML already offer, with React you define small components
+             and put them together to form bigger ones. You can reuse components
+             as you wish across projects (and even across compile targets)</li>
+          <li><strong>Virtual views in memory:</strong> Before manipulating
+             the DOM in the browser, React computes the “output” of an application in 
+             memory (which is fast). When updates happen, it “diffs” what it has with
+             what is coming and performs only the minimum needed actual DOM operations.</li> 
+          <li><strong>Views are a function of state:</strong> You write that “function” once and
+             it’ll always reflect the current state. We don’t need to manually perform DOM
+             operations to reflect the new state, React will do that for us.</li>
+          <li><strong>One-way flow of data (and behavior):</strong>There is no MVC, 
+             you flow the app data through props to any components that need data.
+             You can also flow callbacks for children components to access certain
+             actions of the app. Children components cannot directly read or write
+             the app state. Writing components with well defined and constrained
+             responsibilities that do not interfere with others is what makes
+             great React applications.</li>
+          <li><strong>It’s just JavaScript:</strong>React has a small API which is basically a few functions
+             that you can learn in a few hours. After that, your JavaScript
+             skills are what makes you a good React developer.</li>         
+        </ul>
+             <h3>Main Principles of Redux</h3>
+        <ul>
+          <li><strong>The Redux store is the one </strong>and only source of state 
+          in your application. This simplifies all sorts of common tasks like initializing 
+          the application from server data and gives you one place to reference when you
+           need some aspect of your state. The Redux store is any single data structure of
+            your choosing and the best choice of structure will vary by use!</li>
+          <li><strong>The application state cannot be mutated.</strong> All changes to state must
+           come through the use of pure functions called “reducers” which take a previous
+            state and a new action and determine what the resulting state should be.</li>
+          <li><strong>Reducers must be pure functions,</strong> which means that their output
+           depends solely on their input (i.e. no side-effects!). This is important because 
+           it makes it easy to reason about your application’s logic and makes it simple to
+            trace what is going on in your application.</li>
+            
+        </ul>
+       
+        <div class='link'> <p><a href='https://reactjs.org/' target="blank">React Docs</a></p>
+         <p><a href='https://redux.js.org/' target="blank">Redux Docs</a></p>
+         <p><a href='https://babeljs.io/' target="blank">Babel</a></p>
+         <p><a href='https://github.com/markerikson/react-redux-links/blob/master/react-architecture.md' target="blank">Best practices</a></p>
         </div>
       </section>
     </main>
